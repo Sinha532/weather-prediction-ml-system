@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">WEATHER PREDICTION SYSTEM</h1>
+        {% if prediction %}
+        <div class="output">
+            <h2><strong>Prediction:</strong> {{ prediction }}</h2>
+        </div>
+        {% endif %}
+        <form action="/predict" method="POST">
+            <label for="precipitation">Precipitation:</label>
+            <input type="text" id="precipitation" name="precipitation" required><br><br>
+
+            <label for="temp_max">Max Temperature:</label>
+            <input type="text" id="temp_max" name="temp_max" required><br><br>
+
+            <label for="temp_min">Min Temperature:</label>
+            <input type="text" id="temp_min" name="temp_min" required><br><br>
+
+            <label for="wind">Wind Speed:</label>
+            <input type="text" id="wind" name="wind" required><br><br>
+
+            <label for="model">Choose a Model:</label>
+            <select id="model" name="model">
+                <option value="Logistic Regression(0.83)">Logistic Regression(0.83)</option>
+                <option value="Decison Tree(0.72)">Decision Tree(0.72)</option>
+                <option value="Random Forest(0.82)">Random Forest(0.82)</option>
+                <option value="Support Vector Machine(0.83)">Support Vector Machine(0.83)</option>
+            </select><br><br>
+
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</body>
+</html>
