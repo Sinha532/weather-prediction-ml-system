@@ -2,6 +2,7 @@
 click==8.1.7
 colorama==0.4.6
 flask==3.0.3
+gunicorn==23.0.0
 importlib-metadata==8.4.0
 itsdangerous==2.2.0
 jinja2==3.1.4
@@ -18,6 +19,7 @@ ppft==1.7.6.8
 prompt-toolkit==3.0.47
 protobuf==4.25.4
 psutil==6.0.0
+psycopg2==2.9.9
 pure-eval==0.2.3
 pygments==2.18.0
 python-dateutil==2.9.0.post0
