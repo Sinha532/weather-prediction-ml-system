@@ -26,8 +26,8 @@ This project is a Flask web application that predicts weather conditions based o
 
 ## Project Structure
 
-\`\`\`plaintext
-weather-prediction/
+\`\`\` plaintext
+weather-prediction /
 │
 ├── app.py                  # Main application file
 ├── templates/
@@ -63,17 +63,17 @@ Before running the application, ensure you have the following installed:
    pip install flask
    \`\`\`
 
-3. Place the pre-trained models (\`model1.sav\`, \`model2.sav\`, \`model3.sav\`, \`model4.sav\`) in the \`models/\` directory.
+3. Place the pre-trained models (\`model1.sav\`, \`model2.sav\`, \`model3.sav\`, \`model4.sav\`) in the \`models/ \` directory.
 
 ## Usage
 
 1. Start the Flask application:
 
-   \`\`\`bash
-   python app.py
+   \`\`\` bash
+    python app.py
    \`\`\`
 
-2. Open your web browser and go to \`http://127.0.0.1:5000/\`.
+2. Open your web browser and go to \` http://127.0.0.1:5000/ \`.
 
 3. Enter the input features (precipitation, max temperature, min temperature, wind speed) and select a model from the dropdown.
 
